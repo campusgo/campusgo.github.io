@@ -1,3 +1,5 @@
+{% assign urlComponents = page.url | split: '/' %}
+{% assign sectionName = urlComponents[1] %}
 <div class="navbar navbar-inverse navbar-toggleable-md bg-primary">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,22 +10,34 @@
     <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="/">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle{% if sectionName == 'programs' %} active{% endif %}" href="/programs/" id="programsList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Programs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="programsList">
+                    <a class="dropdown-item" href="/programs/">Overview</a>
+                    <a class="dropdown-item" href="/programs/application-advisory/">Application Advisory</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/programs">Programs</a>
+                <a class="nav-link{% if sectionName == 'tours' %} active{% endif %}" href="/tours/">
+                    Upcoming Tours
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/tours">Upcoming Tours</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About Us</a>
+                <a class="nav-link{% if sectionName == 'about' %} active{% endif %}" href="/about/">
+                    About Us
+                </a>
             </li>
         </ul>
         <span class="navbar-text text-hide">
             <small>
                 <em>
-                    <a href="/about" class="text-white">Registered 501(c)(3) Non-Profit Organization</a>
+                    <a href="/about/" class="text-white">Registered 501(c)(3) Non-Profit Organization</a>
                 </em>
             </small>
         </span>
