@@ -7,10 +7,16 @@
 .btn-primary {
     background-color: #004361 !important;
 }
+.card-primary {
+    background-color: #004361 !important;
+}
 .bg-success {
     background-color: #1ECDAE !important;
 }
 .bg-secondary {
+    background-color: #E8E8E8 !important;
+}
+.btn-secondary {
     background-color: #E8E8E8 !important;
 }
 .bg-transparent {
@@ -18,4 +24,12 @@
 }
 .card-outline-transparent {
     border-color: transparent !important;
+}
+.sticky-base {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.sticky-grow {
+  flex: 1;
 }
