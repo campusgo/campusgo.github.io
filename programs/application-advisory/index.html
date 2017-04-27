@@ -11,12 +11,5 @@ social:
 <p class="text-justify">
 <img src="/media/application-advisory.png" class="img-thumbnail float-md-right ml-md-5 mb-2" /><p>
 </p>
-<p>
-    The Application Advisory program is designed to offer rising high school seniors one-on-one guidance with a college access advisor to:
-</p>
-<ul>
-    <li>Explore their career aspirations</li>
-    <li>Research and develop a college list aligned with their personal goals</li>
-    <li>Develop personal statements &amp; college essays</li>
-    <li>Participate in numerous campus visits</li>
-</ul>
+{% capture app_include %}{% include content/programs-applicationadvisory.md %}{% endcapture %}
+{{ app_include | markdownify }}
