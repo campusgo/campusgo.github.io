@@ -10,31 +10,42 @@ title: Upcoming Tours
       <small class="text-muted">June 20, 2017</small>
     </div>
     <p class="mb-1">
-	Come join us for our kickoff tour to <a href="http://cnu.edu/" target="_blank">Christopher Newport University</a> and <a href="http://www.wm.edu/" target="_blank">The Collge of William &amp; Mary</a>. This one-day tour will take you to visit two schools with a rich legacy right here in the state of Virginia!
-	</p>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  I want to know more!
-</button>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      Come join us for our kickoff tour to <a href="http://cnu.edu/" target="_blank">Christopher Newport University</a> and <a href="http://www.wm.edu/" target="_blank">The Collge of William &amp; Mary</a>. This one-day tour will take you to visit two schools with a rich legacy right here in the state of Virginia!
+    </p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      I want to know more!
+    </button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Christopher Newport and William &amp; Mary Collge Tour</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="https://formspree.io/brittany@campusgo.org" method="POST">
+              <input type="text" name="_gotcha" class="hidden-xs-up" />
+              <input type="hidden" name="_subject" value="College Tour: Student Interest Form" />
+              <input type="hidden" name="tour" value="Christopher Newport and William &amp; Mary Collge Tour" />
+              <input type="hidden" name="_next" value="//campusgo.org/tours/thanks/" />
+            <div class="modal-body">
+              <p class="lead">Are you interested in attending this tour?</p>
+              <div class="form-group">
+                <label for="name" class="form-control-label">Your Name:</label>
+                <input type="text" class="form-control" name="name" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-control-label">Your E-mail Address:</label>
+                <input type="email" class="form-control" name="email" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
